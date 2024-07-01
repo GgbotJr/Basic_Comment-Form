@@ -1,0 +1,104 @@
+* ,
+::after , 
+::before {
+    box-sizing: border-box;
+    font-family: iranyekanX;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    max-width: 100rem;
+    width: 100%;
+}
+
+span {
+    width: 100%;
+    border: 1px solid #042c44;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input , textarea{
+    width: 90%;
+    border: none;
+    resize: none;
+}
+
+input:focus , textarea:focus {
+    outline: none;
+}
+
+input {
+    height: 2.2rem;
+}
+
+textarea {
+    height: 6.8rem;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #042c44;
+    width: 30%;
+    height: 2.2rem;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #1d7fd9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+
+@font-face {
+    font-family: iranyekanX;
+    src: url(Yekan.woff);
+}
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
